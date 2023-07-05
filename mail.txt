@@ -1,0 +1,7 @@
+ I wanted to share with you the results of our recent Recaptha test scenario, particularly focusing on the behavior observed when hitting the transaction from the same IP and machine.
+
+To perform sequential testing, we developed a script to execute a series of 50 test cases. However, during the testing process, we encountered a few challenges. Out of the 50 test cases, the machine was only able to execute 42 successfully. Unfortunately, Recaptha didn't recognize any bot activity in those 42 cases, and as a result, the desired protection mechanism didn't trigger.
+
+Additionally, among the remaining 8 test cases, the machine was unable to execute them. We believe this could be due to technical limitations or other factors related to the setup. We are actively investigating these issues to determine the root cause and find a solution.
+
+In order to explore the performance of Recaptha under parallel testing conditions, we tested the system by running multiple tests simultaneously. However, the machine was only able to handle 5 tests at a time. Surprisingly, Recaptha failed to identify bot activity in all 5 cases, despite the simultaneous execution.
